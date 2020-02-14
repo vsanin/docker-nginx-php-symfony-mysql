@@ -1,4 +1,4 @@
-#Nginx + php7.4-fpm + symfony + mysql docker compose
+##Nginx + php7.4-fpm + symfony + mysql docker compose
 An easy way to set up your Symfony application using Docker and docker-compose.
 This will set up a development environment with nginx, php7.4-fpm, and mysql.
 ![alt text](https://drive.google.com/uc?export=view&id=1B5ZEX936OHVTR8mMBUQRGhbHlCu0rdlH)

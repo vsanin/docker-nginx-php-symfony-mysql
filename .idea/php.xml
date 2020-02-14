@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/web/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/web/vendor/composer" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/web/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/web/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/web/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/web/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/event-dispatcher" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.4" />
+</project>
