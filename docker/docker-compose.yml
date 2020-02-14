@@ -1,0 +1,51 @@
+version: '3.7'
+
+services:
+#PHP 7.4-fpm
+  php:
+    build:
+      context: services/php
+      dockerfile: Dockerfile
+    container_name: '${PROJECT_NAME}_php'
+    environment:
+      - VIRTUAL_HOST=${VIRTUAL_HOST}
+      - APP_ENV=${APP_ENV}
+    volumes:
+      - ${APP_PATH}:${WORKING_DIR}
+      - ./services/php/php.ini:/usr/local/etc/php/conf.d/php.override.ini:ro
+    working_dir: '${WORKING_DIR}'
+#NGINX nginx-proxy ([11.01.2020] now it's 1.17.5)
+  nginx:
+    build:
+      context: services/nginx
+      dockerfile: Dockerfile
+    container_name: '${PROJECT_NAME}_nginx'
+    volumes:
+      - ${APP_PATH}:${WORKING_DIR}
+      - ./services/nginx/logs:/var/log/nginx
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./services/nginx/app.conf:/etc/nginx/conf.d/app.conf
+      - ./services/nginx/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - php
+    ports:
+      - 80:80
+      - 443:443
+#MYSQL 8.0.19
+  mysql:
+    build:
+      context: services/mysql
+      dockerfile: Dockerfile
+    container_name: '${PROJECT_NAME}_mysql'
+    environment:
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+    volumes:
+      - mysql_volume:/var/lib/mysql
+    ports:
+      - 3306:3306
+
+volumes:
+  mysql_volume:
