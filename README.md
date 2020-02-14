@@ -12,7 +12,7 @@ This will set up a development environment with nginx, php7.4-fpm, and mysql.
 6. [Use docker commands](#use-docker-commands)
 7. [Self-signed certificate on Nginx](#self-signed-certificate-on-nginx)
     * [Add this area in nginx.conf](#add-this-area-in-nginx.conf)
-8. [Configure Nginx With SSL Certificates "CertBot"](#configure-nginx-with-ssl-certificates-certbot)
+8. [Configure nginx with SSL certificates "CertBot"](#configure-nginx-with-ssl-certificates-certbot)
 9. [Contributing](#contributing)
 
 
@@ -144,7 +144,7 @@ Open Git Bash in /YOUR_PROJECT_DIRECTORY/docker:
 
 | Service      | Path                    |
 | ------------ | ----------------------- |
-| Website      | `http://localhost` | 
+| Website      | [http://localhost](http://localhost)| 
   
 ___
 ### Use docker commands
@@ -185,9 +185,9 @@ And last step: ```nginx -s reload```
 
 | Service      | Path                    |
 | ------------ | ----------------------- |
-| Website      | `https://localhost` | 
+| Website      | [https://localhost](https://localhost)| 
 ___
-### Configure Nginx With SSL Certificates "CertBot"
+### Configure nginx with SSL certificates "CertBot"
 1. ```docker exec -it project_nginx bash```
 2. Install CertBot
     * ```apt-get install certbot python-certbot-nginx```
