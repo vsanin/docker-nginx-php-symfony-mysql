@@ -118,7 +118,7 @@ Open Bash in /YOUR_PROJECT_DIRECTORY/docker:
 
 | Service      | Path                    |
 | ------------ | ----------------------- |
-| Website      | `http://localhost` | 
+| Website      | [http://localhost](http://localhost)| 
 
 ___
 ### Quickstart for Windows
