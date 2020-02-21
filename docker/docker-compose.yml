@@ -14,7 +14,7 @@ services:
       - ${APP_PATH}:${WORKING_DIR}
       - ./services/php/php.ini:/usr/local/etc/php/conf.d/php.override.ini:ro
     working_dir: '${WORKING_DIR}'
-#NGINX nginx-proxy ([11.01.2020] now it's 1.17.5)
+#NGINX nginx-proxy
   nginx:
     build:
       context: services/nginx

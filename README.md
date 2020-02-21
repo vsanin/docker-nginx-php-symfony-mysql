@@ -6,7 +6,7 @@ This will set up a development environment with nginx, php7.4-fpm, and mysql.
 ## Overview
 1. [Structure](#structure)
 2. [Setting the ENV file for docker-compose](#setting-the-env-file-for-docker-compose)
-3. [Docker-compose configuration](#docker-compose-configuration-model)
+3. [Docker-compose configuration model](#docker-compose-configuration-model)
 4. [Quickstart for linux](#quickstart-for-linux )
 5. [Quickstart for Windows](#quickstart-for-windows)
 6. [Use docker commands](#use-docker-commands)
