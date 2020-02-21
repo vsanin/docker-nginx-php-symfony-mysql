@@ -82,7 +82,7 @@ MYSQL_ROOT_PASSWORD=root
 ~~~
 
 ___
-### Docker-compose configuration
+### Docker-compose configuration model
 
 It includes the following:
 ~~~
@@ -106,11 +106,11 @@ Need install:
 If you WANT to use yourself host name, you MUST run:
 - ```echo "127.0.0.1 project.local" >> /etc/hosts```
 
-Create new .env file, copy content from .env.dist
+Create new .env file, copy content from .env.dist [.env for docker-compose]
 - cd /YOUR_PROJECT_DIRECTORY/docker
 - ```cp .env.dist .env```
 
-Create new .env file, copy content from .env.dist
+Create new .env file, copy content from .env.dist [.env for symfony]
 - cd /YOUR_PROJECT_DIRECTORY/web 
 - ```cp .env.dist .env```
 
