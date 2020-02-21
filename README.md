@@ -47,6 +47,7 @@ ___
 |               php.ini
 |               www.conf
 |
+\---images
 \---web
     \---bin
     \---config
@@ -105,11 +106,11 @@ Need install:
 If you WANT to use yourself host name, you MUST run:
 - ```echo "127.0.0.1 project.local" >> /etc/hosts```
 
-Create new .env file, copy content from .env.dist [.env for docker-compose]
+Create new .env file, copy content from .env.dist
 - cd /YOUR_PROJECT_DIRECTORY/docker
 - ```cp .env.dist .env```
 
-Create new .env file, copy content from .env.dist [.env for symfony]
+Create new .env file, copy content from .env.dist
 - cd /YOUR_PROJECT_DIRECTORY/web 
 - ```cp .env.dist .env```
 
@@ -134,7 +135,7 @@ If you WANT to use yourself host name, you MUST do it:
 - PowerShell run as administrator
 - ```echo "127.0.0.1 project.local" >> C:\Windows\System32\Drivers\etc\hosts```
 
-Create new .env file, copy content from .env.dist [.env for docker]
+Create new .env file, copy content from .env.dist [.env for docker-compose]
 - cd /YOUR_PROJECT_DIRECTORY/docker 
 - ```cp .env.dist .env```
 
