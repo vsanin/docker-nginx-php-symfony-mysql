@@ -1,7 +1,7 @@
 ## Nginx + php7.4-fpm + symfony + mysql docker compose
 An easy way to set up your Symfony application using Docker and docker-compose.
 This will set up a development environment with nginx, php7.4-fpm, and mysql.
-![alt text](https://drive.google.com/uc?export=view&id=1B5ZEX936OHVTR8mMBUQRGhbHlCu0rdlH)
+![alt text](images/schema.png)
 
 ## Overview
 1. [Structure](#structure)
@@ -116,6 +116,9 @@ Create new .env file, copy content from .env.dist [.env for symfony]
 Open Bash in /YOUR_PROJECT_DIRECTORY/docker:
 - ```./run.sh```
 
+Next step:
+* ```docker exec -it project_php composer install```
+
 | Service      | Path                    |
 | ------------ | ----------------------- |
 | Website      | [http://localhost](http://localhost)| 
@@ -129,7 +132,7 @@ Need install:
 
 If you WANT to use yourself host name, you MUST do it:
 - PowerShell run as administrator
-- ```echo "127.0.0.1 project.local" >> C:\Windows\System32\Drivers\etc\host```
+- ```echo "127.0.0.1 project.local" >> C:\Windows\System32\Drivers\etc\hosts```
 
 Create new .env file, copy content from .env.dist [.env for docker]
 - cd /YOUR_PROJECT_DIRECTORY/docker 
@@ -142,10 +145,12 @@ Create new .env file, copy content from .env.dist [.env for symfony]
 Open Git Bash in /YOUR_PROJECT_DIRECTORY/docker:
 - ```./run.sh```
 
+Next step:
+* ```winpty docker exec -it project_php composer install```
+    
 | Service      | Path                    |
 | ------------ | ----------------------- |
-| Website      | [http://localhost](http://localhost)| 
-  
+| Website      | [http://localhost](http://localhost)|  
 ___
 ### Use docker commands
     docker images #List images
