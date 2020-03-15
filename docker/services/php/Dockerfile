@@ -45,6 +45,4 @@ WORKDIR /code
 
 RUN rm -rf /var/cache/apk/*
 
-USER www-data
-
 CMD ["php-fpm", "--nodaemonize"]

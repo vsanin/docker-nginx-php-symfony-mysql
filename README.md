@@ -73,7 +73,7 @@ WORKING_DIR=/code
 PROJECT_NAME=project
 
 VIRTUAL_HOST=localhost #for example you can use: project.local
-APP_ENV=dev #prod
+APP_ENV=dev
 
 MYSQL_DATABASE=db_project
 MYSQL_USER=user
@@ -103,6 +103,14 @@ Need install:
 - docker 18.06.0+
 - docker-compose 1.18.0+
 
+#####How to fix docker: Got permission denied issue
+1. Create the docker group if it does not exist
+    - ```sudo groupadd docker```
+2. Add your user to the docker group
+    - ```sudo usermod -aG docker $USER```
+3. Need to reboot your computer
+    - ```sudo reboot```
+
 If you WANT to use yourself host name, you MUST run:
 - ```echo "127.0.0.1 project.local" >> /etc/hosts```
 
@@ -114,7 +122,8 @@ Create new .env file, copy content from .env.dist [.env for symfony]
 - cd /YOUR_PROJECT_DIRECTORY/web 
 - ```cp .env.dist .env```
 
-Open Bash in /YOUR_PROJECT_DIRECTORY/docker:
+Open Git Bash in /YOUR_PROJECT_DIRECTORY/docker:
+- ```sudo chmod +x run.sh ```
 - ```./run.sh```
 
 Next step:
