@@ -103,7 +103,7 @@ Need install:
 - docker 18.06.0+
 - docker-compose 1.18.0+
 
-#####How to fix docker: Got permission denied issue
+##### How to fix docker: Got permission denied issue
 1. Create the docker group if it does not exist
     - ```sudo groupadd docker```
 2. Add your user to the docker group
