@@ -40,8 +40,12 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN composer global require hirak/prestissimo
 
 COPY ./php.ini /usr/local/etc/php/php.ini
-COPY ./www.conf /usr/local/etc/php-fpm.d/www.conf:ro
 WORKDIR /code
+
+RUN usermod -u 29999 www-data
+RUN chown -R www-data /code
+
+USER www-data
 
 RUN rm -rf /var/cache/apk/*
 
