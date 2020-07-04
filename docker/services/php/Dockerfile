@@ -45,6 +45,9 @@ WORKDIR /code
 RUN usermod -u 1000 www-data
 RUN chown -R www-data /code
 
+RUN mkdir /var/www/.composer/
+RUN chown -R www-data /var/www/.composer/
+
 USER www-data
 
 RUN rm -rf /var/cache/apk/*
