@@ -42,7 +42,7 @@ RUN composer global require hirak/prestissimo
 COPY ./php.ini /usr/local/etc/php/php.ini
 WORKDIR /code
 
-RUN usermod -u 29999 www-data
+RUN usermod -u 1000 www-data
 RUN chown -R www-data /code
 
 USER www-data
