@@ -167,6 +167,7 @@ ___
     docker ps #List containers
     docker exec -it project_php bash #Run a command in a running container
     docker stop $(docker ps -aq) #Stop one or more running containers
+    docker rmi -f $(docker images -q) #Remove all images at once
     docker history	#Show the history of an image
     docker logs	#Fetch the logs of a container
     
